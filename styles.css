@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+
+}
+
+.page {
+    grid-column-start: 2;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    display: flex;
+}
+
+li {
+    padding: 0 24px 0 0;
+}
