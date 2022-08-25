@@ -67,6 +67,7 @@ li a {
 
 .guia-mapa {
   width: 25%;
+  max-width: 300px;
   background-color: aliceblue;
   margin-top: -24px;
   position: fixed;
@@ -100,6 +101,14 @@ li a {
   font-size: 3.2rem;
   padding: 4rem 0 4rem 0;
   font-weight: 400;
+}
+
+.img-vis {
+  width: 100%;
+}
+
+.img-mapas {
+  width: 100%;
 }
 
 footer {
