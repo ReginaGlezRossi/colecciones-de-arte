@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-columns: 24px auto 24px;
-  grid-template-rows: 40px 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   gap: 0px 0px;
   grid-template-areas:
     ". menu ."
@@ -21,14 +21,12 @@ body {
 header {
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-template-rows: 1fr;
+  grid-template-rows: min-content;
   gap: 0px 0px;
   grid-template-areas: ". .";
   grid-area: menu;
-}
-
-nav {
   border-bottom: solid #000 1px;
+  padding-top: 24px;
 }
 
 main {
@@ -57,6 +55,11 @@ li {
   padding: 0 24px 0 0;
 }
 
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
 .guia-mapa-container {
   display: flex;
   justify-content: end;
@@ -65,6 +68,7 @@ li {
 .guia-mapa {
   width: 25%;
   background-color: aliceblue;
+  margin-top: -24px;
   position: fixed;
 }
 
@@ -88,7 +92,8 @@ li {
 
 .collapse-body {
   grid-area: collapse-body;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .titulo-principal {
